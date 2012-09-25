@@ -46,7 +46,7 @@ sickbeard_extra_install: $(STAGING_DIR)/share/SickBeard
 
 $(STAGING_DIR)/share/SickBeard:
 	install -m 755 -d $(STAGING_DIR)/share
-	cd $(STAGING_DIR)/share && git clone https://github.com/midgetspy/Sick-Beard.git SickBeard
+	cd $(STAGING_DIR)/share && git clone https://github.com/Pistachitos/Sick-Beard.git SickBeard
 	rm -fr $(STAGING_DIR)/share/SickBeard/.git $(STAGING_DIR)/share/SickBeard/.gitignore
 	chmod 777 $(STAGING_DIR)/share/SickBeard/autoProcessTV
 	install -m 600 $(STAGING_DIR)/share/SickBeard/autoProcessTV/autoProcessTV.cfg.sample $(STAGING_DIR)/share/SickBeard/autoProcessTV/autoProcessTV.cfg
